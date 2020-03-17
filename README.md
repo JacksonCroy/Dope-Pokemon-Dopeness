@@ -1,30 +1,14 @@
-# Dope-Pokemon-Dopeness
 
-this is my read me yall
+## Description:
+#### This application generates two random Pokemon to battle.
 
-heya
+## Table of Contents:
 
+* [Summary](#Description)
+* [Contributors](#Contributors)
 
+### Contributors:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Jackson Croy, Clayton Dean, Ian Sears, and Sean Rooney
 
 Repo name created with: https://shyaboi.github.io/TubularRepoNameGeneratorSoldier/
