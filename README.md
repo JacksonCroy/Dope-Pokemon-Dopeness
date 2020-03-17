@@ -1,4 +1,3 @@
-# Pokemon Random Battle Generator
 
 ## Description:
 #### This application generates two random Pokemon to battle.
