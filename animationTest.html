@@ -7,47 +7,61 @@
     <meta charset="utf-8" />
     <title>Micron JS</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
     <link href="https://uploads-ssl.webflow.com/5b70e18ab3323e9a6602b8af/css/micron-js.webflow.b00b92060.css"
-        rel="stylesheet" type="text/css" />
+    rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
-  
+    
     <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
     <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="animationTest.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <meta content="Webflow" name="generator" />
 </head>
 
 <body>
-<div>
-<img src="public/assests/clefable.png" alt="oof" data-micron="swing" class="interaction" id="clef">
+    <div>
 
-<img src="public/assests/jigglypuff.png" alt="oof" data-micron="shake" class="interaction">
-   
-<img src="public/assests/torkoal.png" class="interaction" data-micron="jerk" alt="oof">
-</div>
-<div>
-<img src="public/assests/mamoswine.png" class="interaction" data-micron="flicker" alt="oof">
 
-<img src="public/assests/sewaddle.png" class="interaction" data-micron="jelly" alt="oof">
 
-<img src="public/assests/sharpedo.png" class="interaction" data-micron="tada" alt="oof">
-</div>
-<div>
-<img src="public/assests/charmeleon.png" class="interaction" data-micron="fade" alt="oof">
+        <img src="public/assests/clefable.png" alt="oof" data-micron="swing" class="interaction" id="clef">
+        <a href="#" class="myButtonL">Move Jiggly Left</a>
+        
+        <a href="#" class="myButtonR">Move Jiggly Right</a>
+        
+        <a href="#" class="myButtonA">Jiggly Attack</a>
+        
+        <div class="jiggly" id="jiggly">
+            <img src="public/assests/jigglypuff.png" alt="oof" data-micron="shake" class="interaction" id="jigglyPic">
+            <div class="jigglyA" id="jigglyA">Varible Oof <br>20hp</div>
+        </div>
+        <br>
+        <div>
+            <img src="public/assests/torkoal.png" class="interaction" data-micron="jerk" alt="oof">
+       
+            <img src="public/assests/mamoswine.png" class="interaction" data-micron="flicker" alt="oof">
 
-<img src="public/assests/ambipom.png" class="interaction" data-micron="bounce" alt="oof">
+            <img src="public/assests/sewaddle.png" class="interaction" data-micron="jelly" alt="oof">
 
-<img src="public/assests/araquanid.jpg" class="interaction" data-micron="groove" alt="oof">
-</div>
-<div>
-<img src="public/assests/beedrill.png" class="interaction" data-micron="squeeze" alt="oof">
+            <img src="public/assests/sharpedo.png" class="interaction" data-micron="tada" alt="oof">
+        </div>
+        <div>
+            <img src="public/assests/charmeleon.png" class="interaction" data-micron="fade" alt="oof">
 
-<img src="public/assests/bewear.jpg" class="interaction" data-micron="flicker" alt="oof">
+            <img src="public/assests/ambipom.png" class="interaction" data-micron="bounce" alt="oof">
 
-<img src="public/assests/blastoise.png" class="interaction" data-micron="blink" alt="oof">
+            <img src="public/assests/araquanid.jpg" class="interaction" data-micron="groove" alt="oof">
+        </div>
+        <div>
+            <img src="public/assests/beedrill.png" class="interaction" data-micron="squeeze" alt="oof">
 
-<img src="public/assests/caterpie.png" class="interaction" data-micron="pop" alt="oof">
-</div>
+            <img src="public/assests/bewear.jpg" class="interaction" data-micron="flicker" alt="oof">
+
+            <img src="public/assests/blastoise.png" class="interaction" data-micron="blink" alt="oof">
+
+            <img src="public/assests/caterpie.png" class="interaction" data-micron="pop" alt="oof">
+        </div>
 </body>
+<script src="animationTest.js"></script>
 
 </html>
