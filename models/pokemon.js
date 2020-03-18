@@ -1,21 +1,23 @@
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-    var Pokemon = sequelize.define("pokemon", {
-        Number: { type: DataTypes.INTERGER },
+    const Pokemon = sequelize.define("pokemon", {
+        Number: {
+            type: DataTypes.INTEGER,
+            primaryKey: true
+        },
         Name: { type: DataTypes.STRING },
         Type1: DataTypes.STRING,
         Type2: DataTypes.STRING,
-        Total: DataTypes.INT,
-        HP: DataTypes.INT,
-        Attack: DataTypes.INT,
-        Defense: DataTypes.INT,
-        Sp_Atk: DataTypes.INT,
-        Sp_Def: DataTypes.INT,
-        Speed: DataTypes.INT,
-        Generation: DataTypes.INT,
-        Legendary: DataTypes.INT
-
-    });
+        Total: DataTypes.INTEGER,
+        HP: DataTypes.INTEGER,
+        Attack: DataTypes.INTEGER,
+        Defense: DataTypes.INTEGER,
+        Sp_Atk: DataTypes.INTEGER,
+        Sp_Def: DataTypes.INTEGER,
+        Speed: DataTypes.INTEGER,
+        Generation: DataTypes.INTEGER,
+        Legendary: DataTypes.INTEGER
+    }, { timestamps: false });
     return Pokemon;
 }
 
