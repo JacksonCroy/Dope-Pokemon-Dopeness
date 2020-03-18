@@ -1,0 +1,84 @@
+<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com -->
+<!-- Last Published: Mon Dec 17 2018 12:36:12 GMT+0000 (UTC) -->
+<html data-wf-domain="micron-js.webflow.io" data-wf-page="5b70e18ab3323ef70a02b8b0"
+    data-wf-site="5b70e18ab3323e9a6602b8af" data-wf-status="1">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Micron JS</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="https://uploads-ssl.webflow.com/5b70e18ab3323e9a6602b8af/css/micron-js.webflow.b00b92060.css"
+        rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+  
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="animationTest.css">
+</head>
+
+<body>
+
+<img src="public/assets/clefable.png" alt="oof" data-micron="swing" class="interaction" id="clef">
+<img src="public/assets/jigglypuff.png" alt="oof" data-micron="shake" class="interaction">
+   
+                <h2><span class="text-blue">[μ]</span> Interactions</h2>
+                <div>Click on us to see the fun!</div>
+            </div><a href="#" class="c-brick w-inline-block">
+                <div data-micron="shake" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;shake&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="fade" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;fade&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="jelly" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;jelly&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="bounce" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;bounce&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="tada" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;tada&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="groove" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;groove&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="swing" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;swing&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="squeeze" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;squeeze&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="flicker" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;flicker&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="jerk" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;jerk&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="blink" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;blink&quot;</div>
+            </a><a href="#" class="c-brick w-inline-block">
+                <div data-micron="pop" class="c-brick__interaction"></div>
+                <div class="c-brick__text">&quot;pop&quot;</div>
+            </a>
+        </div>
+    </div>
+    <div>
+        
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://uploads-ssl.webflow.com/5b70e18ab3323e9a6602b8af/js/webflow.3c964a30e.js"
+        type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <script>
+        $('.c-brick').click(function (e) {
+            e.preventDefault();
+            var linkUrl = $(this).attr('href');
+            setTimeout(function (url) { window.location = url; }, 1000, linkUrl);
+        });
+    </script>
+</body>
+
+</html>
