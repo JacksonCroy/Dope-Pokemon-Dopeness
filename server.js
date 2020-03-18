@@ -1,6 +1,11 @@
 // Requiring necessary npm packages
+<<<<<<< HEAD
+var express = require("express");
+var session = require("express-session");
+=======
 var express = require("./node_modules/express");
 var session = require("./node_modules/express-session");
+>>>>>>> 78d1d59f15cfc1e71850fe61f582fc548372925f
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
