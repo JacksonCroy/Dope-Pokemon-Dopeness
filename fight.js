@@ -31,7 +31,7 @@ Pokemon.prototype.printStats = function() {
 // and returns true or false depending upon the outcome
 Pokemon.prototype.isAlive = function() {
   if (this.hp > 0) {
-    console.log(this.name + " is still alive!");
+    // console.log(this.name + " is still alive!");
     console.log("\n-------------\n");
     return true;
   }
@@ -40,16 +40,20 @@ Pokemon.prototype.isAlive = function() {
 };
 
 // method which takes in a second object and decreases their "hitpoints" by this character's strength
-Pokemon.prototype.attack = function(character2) {
+Pokemon.prototype.attack = function(attackee) {
    var attInterval = setInterval(() => {
-  if (character2.isAlive()==true) {
-      character2.hp -= this.strength;
+    const attacker = this.name
+     
+  if (attackee.isAlive()==true) {
+      attackee.hp -= this.strength;
 
-      console.log(character2);
+      console.log("Attacker: " + this.name, this.hp);
+      console.log("Defender: " + attackee.name, attackee.hp);
     }
     else{
         function myStopFunction() {
             clearInterval(attInterval);
+            console.log(attacker + " Has killed " + attackee.name);
           }
           myStopFunction()
     }
