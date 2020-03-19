@@ -22,4 +22,19 @@ module.exports = function(app) {
                 res.render("index", hbsObject)
             });
     });
+
+
+    app.get("/fight/:id", function(req, res) {
+        db.pokemon.findOne({
+                where: {
+                    Number: req.params.id
+                }
+            })
+            .then(function(poke) {
+                res.json(poke);
+            });
+    });
+
+
+
 }
