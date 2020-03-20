@@ -49,7 +49,7 @@ $("#add-btn").on("click", function(event) {
         // log the data we found
         console.log(data);
         // tell the user we're adding a character with an alert window
-        alert("Adding character...");
+        // alert("Adding character...");
       });
   
 
