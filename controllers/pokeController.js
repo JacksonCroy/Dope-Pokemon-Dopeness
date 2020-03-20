@@ -17,11 +17,42 @@ router.get("/", function(req, res) {
 });
 
 
-router.post("/api/cats", function(req, res) {
-    cat.create([
-        "name", "sleepy"
-    ], [
-        req.body.name, req.body.sleepy
+router.post("/create", function(req, res) {
+    pokemon.create([
+
+        "Number",
+        "Type1", 
+        "Type2",
+        "Total",
+        "HP",
+        "Attack",
+        "Defense",
+        "Sp_Atk",
+        "Sp_Def",
+        "Speed",
+        "Generation",
+        "Legendary",
+        "User",
+        "Enemy",
+
+    ], 
+    [
+
+        req.body.name, 
+        req.body.type1,
+        req.body.type2,
+        req.body.total,
+        req.body.hp,
+        req.body.attack,
+        req.body.defense,
+        req.body.sp_atk,
+        req.body.sp_def,
+        req.body.speed,
+        req.body.generation,
+        req.body.Legendary,
+        req.body.user,
+        req.body.enemy,
+
     ], function(result) {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
