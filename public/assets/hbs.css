@@ -10,6 +10,8 @@
   margin-top: 5%;
   width: 90vw;
   height: 90vh;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 
 /* 
@@ -21,11 +23,9 @@ postion: relative */
   padding-right: 5%;
   margin-left: 60%;
   margin-bottom: 5%;
-  justify-content: end;
 }
 
 .playerClass {
   margin-top: 5%;
   margin-bottom: 5%;
-  justify-content: start;
 }
