@@ -36,7 +36,7 @@ module.exports = function(app) {
     });
 
 
-    app.get ("/create", function (req, res) {
+    app.get("/create", function (req, res) {
         res.render("add")
     })
 

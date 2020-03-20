@@ -14,14 +14,16 @@ $(document).ready(function() {
     }
 });
 
-// var submitEl = document.querySelector("#add-btn");
+
 
 // submitEl.addEventListener("click", function(event) {
 //   event.preventDefault();
 
 
-$("#add-btn").on("click", function(event) {
+$("#add-btn").one("click", function(event) {
+
     event.preventDefault();
+    event.stopPropagation();
   
     
     let newPokemon = {
@@ -49,7 +51,7 @@ $("#add-btn").on("click", function(event) {
         // log the data we found
         console.log(data);
         // tell the user we're adding a character with an alert window
-        // alert("Adding character...");
+        alert("Adding character...");
       });
   
 
