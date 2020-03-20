@@ -1,0 +1,26 @@
+main {
+  display: flexbox;
+}
+
+.container {
+  max-inline-size: 96%;
+}
+
+#background-img {
+  background-image: url(battle-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: aqua;
+  max-height: 90%;
+  margin-top: 5%
+}
+
+.enemyClass {
+  margin-right: 15%;
+}
+
+.playerClass {
+  margin-left: 15%;
+}
