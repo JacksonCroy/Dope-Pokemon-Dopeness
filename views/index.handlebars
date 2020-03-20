@@ -2,23 +2,18 @@
 
 <h2>This is the Enemy</h2>
 
-<ul>
-  {{#each pokemon}}
-  {{#if Enemy}}
-  {{Name}}
-  {{HP}}
-  {{/if}}
-  {{/each}}
+<form class="form-inline search">
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" class="form-control" id="search-value2" placeholder="Choose your Pokemon">
+  </div>
+  <button id="search-btn2" type="submit" class="btn btn-primary mb-2">Go!</button>
+</form>
+
+<ul id="enemyPoke">
+  
 </ul>
 
 <h2>This is your Pokemon</h2>
-<ul>
-  <li> 3 = Venusaur </li>
-  <li> 6 = Charizard</li>
-  <li> 9 = Blastoise</li>
-  <li> 68 = Machamp</li>
-  <li> 135 = Jolteon</li>
-</ul>
 
 <form class="form-inline search">
   <div class="form-group mx-sm-3 mb-2">
@@ -27,6 +22,6 @@
   <button id="search-btn" type="submit" class="btn btn-primary mb-2">Go!</button>
 </form>
 
-<ul>
+<ul id="userPoke">
   
 </ul>
