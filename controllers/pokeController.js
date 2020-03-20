@@ -38,20 +38,20 @@ router.post("/create", function(req, res) {
     ], 
     [
 
-        req.body.name, 
-        req.body.type1,
-        req.body.type2,
-        req.body.total,
-        req.body.hp,
-        req.body.attack,
-        req.body.defense,
-        req.body.sp_atk,
-        req.body.sp_def,
-        req.body.speed,
-        req.body.generation,
+        req.body.Name, 
+        req.body.Type1,
+        req.body.Type2,
+        req.body.Total,
+        req.body.HP,
+        req.body.Attack,
+        req.body.Defense,
+        req.body.Sp_atk,
+        req.body.Sp_def,
+        req.body.Speed,
+        req.body.Generation,
         req.body.Legendary,
-        req.body.user,
-        req.body.enemy,
+        req.body.User,
+        req.body.Enemy,
 
     ], function(result) {
         // Send back the ID of the new quote

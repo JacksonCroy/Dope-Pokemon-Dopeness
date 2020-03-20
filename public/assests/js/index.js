@@ -14,6 +14,12 @@ $(document).ready(function() {
     }
 });
 
+// var submitEl = document.querySelector("#add-btn");
+
+// submitEl.addEventListener("click", function(event) {
+//   event.preventDefault();
+
+
 $("#add-btn").on("click", function(event) {
     event.preventDefault();
   
@@ -48,9 +54,9 @@ $("#add-btn").on("click", function(event) {
   
     // empty each input box by replacing the value with an empty string
    name: $("#name").val("");
-      $("#type1").val("");,      
+      $("#type1").val("");
       $("#type2").val("");  
-      $("#total").val("");,
+      $("#total").val("");
       $("#hp").val("");
       $("#attack").val("");     
       $("#defense").val("");  
