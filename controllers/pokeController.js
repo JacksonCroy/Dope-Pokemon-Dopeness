@@ -16,16 +16,48 @@ router.get("/", function(req, res) {
     });
 });
 
-router.post("/api/cats", function(req, res) {
-    cat.create([
-        "name", "sleepy"
-    ], [
-        req.body.name, req.body.sleepy
-    ], function(result) {
-        // Send back the ID of the new quote
-        res.json({ id: result.insertId });
-    });
-});
+
+// router.post("/create", function(req, res) {
+//     pokemon.create([
+
+//         "number",
+//         "type1", 
+//         "type2",
+//         "total",
+//         "hp",
+//         "attack",
+//         "defense",
+//         "sp_Atk",
+//         "sp_Def",
+//         "speed",
+//         "generation",
+//         "legendary",
+//         "user",
+//         "enemy",
+
+//     ], 
+//     [
+
+//         req.body.name, 
+//         req.body.type1,
+//         req.body.type2,
+//         req.body.total,
+//         req.body.hp,
+//         req.body.attack,
+//         req.body.defense,
+//         req.body.sp_atk,
+//         req.body.sp_def,
+//         req.body.speed,
+//         req.body.generation,
+//         req.body.legendary,
+//         req.body.user,
+//         req.body.enemy,
+
+//     ], function(result) {
+//         // Send back the ID of the new quote
+//         res.json({ id: result.insertId });
+//     });
+// });
 
 router.put("/api/cats/:id", function(req, res) {
     var condition = "id = " + req.params.id;

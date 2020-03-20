@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             primaryKey: true
         },
-        Name: { type: DataTypes.STRING },
+        Name: DataTypes.STRING,
         Type1: DataTypes.STRING,
         Type2: DataTypes.STRING,
         Total: DataTypes.INTEGER,
