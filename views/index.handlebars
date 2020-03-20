@@ -22,8 +22,22 @@
   <button id="search-btn" type="submit" class="btn btn-primary mb-2">Go!</button>
 </form>
 
-<ul>
+<ul id="userPoke">
+  
 </ul>
 
 <a href="create" class="btn btn-danger btn-lg">
         <span class="fa fa-plus"></span> Add New Pokemon</a>
+
+<h2>Pokemon index</h2>
+<div> {{#each pokemon}}
+<div class="card pokecard" style="width:300px">
+  <div class="card-body">
+    <h4 class="card-title">{{Name}}</h4>
+    <p class="card-text">selector: {{Number}}</p>
+  </div>
+</div>
+  {{/each}} </p></div>
+ 
+
+

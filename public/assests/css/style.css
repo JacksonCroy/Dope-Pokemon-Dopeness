@@ -1,0 +1,9 @@
+.pokeIndex {
+    margin-right: -1000px;
+}
+
+.pokecard {
+    float: left;
+    position: relative;
+    padding: 4px;
+}
