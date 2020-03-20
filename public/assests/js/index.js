@@ -26,20 +26,20 @@ $("#add-btn").on("click", function(event) {
     
     let newPokemon = {
       
-      name: $("#name").val().trim(),
-      type1: $("#type1").val().trim(),      
-      type2: $("#type2").val().trim(),   
-      total: $("#total").val().trim(),
-      hp: $("#hp").val().trim(),
-      attack: $("#attack").val().trim(),      
-      defense: $("#defense").val().trim(),   
-      sp_atk: $("#sp_atk").val().trim(),
-      sp_def: $("#sp_def").val().trim(),   
-      speed: $("#speed").val().trim(),
-      generation: $("#generation").val().trim(),
-      legendary: $("#legendary").val().trim(),      
-      user: $("#user").val().trim(),   
-      enemy: $("#enemy").val().trim(),
+      Name: $("#Name").val().trim(),
+      Type1: $("#Type1").val().trim(),
+      Type2: $("#Type2").val().trim(),  
+      Total: $("#Total").val().trim(),
+      HP: $("#HP").val().trim(),
+      Attack: $("#Attack").val().trim(),     
+      Defense: $("#Defense").val().trim(),  
+      Sp_atk: $("#Sp_atk").val().trim(),
+      Sp_def: $("#Sp_def").val().trim(),  
+      Speed: $("#Speed").val().trim(),
+      Generation: $("#Generation").val().trim(),
+      Legendary: $("#Legendary").val().trim(),    
+      User: $("#User").val().trim(),
+      Enemy: $("#Enemy").val().trim(),
     };
   
     // send an AJAX POST-request with jQuery
@@ -52,19 +52,5 @@ $("#add-btn").on("click", function(event) {
         alert("Adding character...");
       });
   
-    // empty each input box by replacing the value with an empty string
-   name: $("#name").val("");
-      $("#type1").val("");
-      $("#type2").val("");  
-      $("#total").val("");
-      $("#hp").val("");
-      $("#attack").val("");     
-      $("#defense").val("");  
-      $("#sp_atk").val("");
-      $("#sp_def").val("");  
-      $("#speed").val("");
-      $("#generation").val("");
-      $("#legendary").val("");    
-      $("#user").val("");
-      $("#enemy").val("");
+
   });
