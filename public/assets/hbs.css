@@ -1,10 +1,4 @@
-main {
-  display: flexbox;
-}
 
-.container {
-  max-inline-size: 96%;
-}
 
 #background-img {
   background-image: url(battle-background.png);
@@ -13,14 +7,25 @@ main {
   background-attachment: fixed;
   background-size: cover;
   background-color: aqua;
-  max-height: 90%;
-  margin-top: 5%
+  margin-top: 5%;
+  width: 90vw;
+  height: 90vh;
 }
 
+/* 
+class card + 
+float: :left
+postion: relative */
+
 .enemyClass {
-  margin-right: 15%;
+  padding-right: 5%;
+  margin-left: 60%;
+  margin-bottom: 5%;
+  justify-content: end;
 }
 
 .playerClass {
-  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: start;
 }
