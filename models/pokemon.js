@@ -16,7 +16,9 @@ module.exports = function(sequelize, DataTypes) {
         Sp_Def: DataTypes.INTEGER,
         Speed: DataTypes.INTEGER,
         Generation: DataTypes.INTEGER,
-        Legendary: DataTypes.INTEGER
+        Legendary: DataTypes.INTEGER,
+        User: DataTypes.INTEGER,
+        Enemy: DataTypes.INTEGER
     }, { timestamps: false });
     return Pokemon;
 }
