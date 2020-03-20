@@ -16,11 +16,43 @@ router.get("/", function(req, res) {
     });
 });
 
-router.post("/api/cats", function(req, res) {
-    cat.create([
-        "name", "sleepy"
-    ], [
-        req.body.name, req.body.sleepy
+
+router.post("/create", function(req, res) {
+    pokemon.create([
+
+        "Number",
+        "Type1", 
+        "Type2",
+        "Total",
+        "HP",
+        "Attack",
+        "Defense",
+        "Sp_Atk",
+        "Sp_Def",
+        "Speed",
+        "Generation",
+        "Legendary",
+        "User",
+        "Enemy",
+
+    ], 
+    [
+
+        req.body.Name, 
+        req.body.Type1,
+        req.body.Type2,
+        req.body.Total,
+        req.body.HP,
+        req.body.Attack,
+        req.body.Defense,
+        req.body.Sp_atk,
+        req.body.Sp_def,
+        req.body.Speed,
+        req.body.Generation,
+        req.body.Legendary,
+        req.body.User,
+        req.body.Enemy,
+
     ], function(result) {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
