@@ -17,47 +17,47 @@ router.get("/", function(req, res) {
 });
 
 
-router.post("/create", function(req, res) {
-    pokemon.create([
+// router.post("/create", function(req, res) {
+//     pokemon.create([
 
-        "Number",
-        "Type1", 
-        "Type2",
-        "Total",
-        "HP",
-        "Attack",
-        "Defense",
-        "Sp_Atk",
-        "Sp_Def",
-        "Speed",
-        "Generation",
-        "Legendary",
-        "User",
-        "Enemy",
+//         "number",
+//         "type1", 
+//         "type2",
+//         "total",
+//         "hp",
+//         "attack",
+//         "defense",
+//         "sp_Atk",
+//         "sp_Def",
+//         "speed",
+//         "generation",
+//         "legendary",
+//         "user",
+//         "enemy",
 
-    ], 
-    [
+//     ], 
+//     [
 
-        req.body.Name, 
-        req.body.Type1,
-        req.body.Type2,
-        req.body.Total,
-        req.body.HP,
-        req.body.Attack,
-        req.body.Defense,
-        req.body.Sp_atk,
-        req.body.Sp_def,
-        req.body.Speed,
-        req.body.Generation,
-        req.body.Legendary,
-        req.body.User,
-        req.body.Enemy,
+//         req.body.name, 
+//         req.body.type1,
+//         req.body.type2,
+//         req.body.total,
+//         req.body.hp,
+//         req.body.attack,
+//         req.body.defense,
+//         req.body.sp_atk,
+//         req.body.sp_def,
+//         req.body.speed,
+//         req.body.generation,
+//         req.body.legendary,
+//         req.body.user,
+//         req.body.enemy,
 
-    ], function(result) {
-        // Send back the ID of the new quote
-        res.json({ id: result.insertId });
-    });
-});
+//     ], function(result) {
+//         // Send back the ID of the new quote
+//         res.json({ id: result.insertId });
+//     });
+// });
 
 router.put("/api/cats/:id", function(req, res) {
     var condition = "id = " + req.params.id;
