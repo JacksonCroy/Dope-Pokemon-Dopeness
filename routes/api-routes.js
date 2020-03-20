@@ -36,5 +36,34 @@ module.exports = function(app) {
     });
 
 
+    app.get("/create", function (req, res) {
+        res.render("add")
+    })
+
+
+    app.post("/create", function(req, res) {
+        console.log(req.body);
+        db.pokemon.create({
+        Number: req.body.Number,
+        Name: req.body.Name,
+        Type1: req.body.Type1,
+        Type2: req.body.Type2,
+        Total: req.body.Total,
+        HP: req.body.HP,
+        Attack: req.body.Attack,
+        Defense: req.body.Defense,
+        Sp_Atk: req.body.Sp_atk,
+        Sp_Def: req.body.Sp_def,
+        Speed: req.body.Speed,
+        Generation: req.body.Generation,
+        Legendary: req.body.Legendary,
+        User: req.body.User,
+        Enemy: req.body.Enemy,
+        })
+          .then(function(dbPost) {
+            res.json(dbPost);
+          });
+      });
+
 
 }
