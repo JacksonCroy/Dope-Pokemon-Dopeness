@@ -7,3 +7,8 @@
     position: relative;
     padding: 4px;
 }
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
