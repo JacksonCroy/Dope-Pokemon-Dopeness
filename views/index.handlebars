@@ -1,48 +1,23 @@
-{{!-- Accepted both changes WARNING --}}
+<div class="jumbotron text-center">
+  <h1>Pokemon Battle Generator!!!</h1>
+</div>
 
-<article id="background-img">
+<div class="row row-cols-3">
+  <div class="col-3">
+  </div>
+  <div class="col-6">
 
-<div class="col-4">
-      One of two columns
- </div>
-    <div class="col-6 enemyClass">
-      <h2>This is the Enemy</h2>
-      <ul>
-        {{#each pokemon}}
-        {{#if Enemy}}
-        {{Name}}
-        {{HP}}
-        {{/if}}
-        {{/each}}
-      </ul>
+    <div class="card justify-content-center" style="width: 100%;">
+      <ul class="list-group">
+
+        <a class="btn btn-warning list-group-item" href="choose">Choose two Pokemon to fight</a>
+
+        <a class="btn btn-warning list-group-item" href="create">Add New Pokemon</a>
+
+        <a class="btn btn-warning list-group-item" href="pokedex">Go to Pokedex</a>
+    
     </div>
-    two of two columns
-  </div>
-  <div class="row align-items-center">
-    <div class="col center-buffer">
-      One of one columns
-    </div>
-  </div>
-  <div class="row align-items-end">
-    <div class="col-4 playerClass">
-      <h2>This is your Pokemon</h2>
-      One of two columns
-    </div>
-    <div class="col-6">
-      two of two columns
+    <div class="col-3">
     </div>
   </div>
 
-  <div class="row">
-    <div class="col">
-      <p id="battle-txt-output">
-        Hank Hill hit Pikachu for 666 points!!!
-      </p>
-    </div>
-  </div>
-
-
-<ul id="userPoke">
-
-</ul>
-</article>
