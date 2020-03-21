@@ -1,14 +1,46 @@
-.pokeIndex {
-    margin-right: -1000px;
-}
 
-.pokecard {
+#background-img {
+    background-image: url(battle-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: aqua;
+    margin-top: 5%;
+    width: 90vw;
+    height: 90vh;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  
+  /* 
+  class card + 
+  float: :left
+  postion: relative */
+  
+  .enemyClass {
+    padding-right: 5%;
+    margin-left: 60%;
+    margin-bottom: 5%;
+  }
+  
+  .playerClass {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .pokeIndex {
+    margin-right: -1000px;
+  }
+  
+  .pokecard {
     float: left;
     position: relative;
     padding: 4px;
-}
-
-img {
+  }
+  
+  img {
     max-width: 100px;
     max-height: 100px;
-}
+  }
+  
