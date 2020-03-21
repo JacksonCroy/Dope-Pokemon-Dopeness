@@ -163,5 +163,5 @@ Number,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generati
 149,Dragonite,Dragon,Flying,600,91,134,95,100,100,80,1,0,0,0
 150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,1,0,0
 150,MewtwoMega Mewtwo X,Psychic,Fighting,780,106,190,100,154,100,130,1,1,0,0
-150,MewtwoMega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,1,0,0
+150,MewtwoMega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,1,0,1
 151,Mew,Psychic,,600,100,100,100,100,100,100,1,0,0,0
