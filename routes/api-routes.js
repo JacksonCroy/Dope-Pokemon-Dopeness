@@ -33,8 +33,25 @@ module.exports = function(app) {
       });
   });
 
+  app.get("/fight", function(req, res) {
+    res.render("fight");
+  });
+
+  app.get("/choose", function(req, res) {
+    res.render("choose");
+  });
+
   app.get("/create", function(req, res) {
     res.render("create");
+  });
+
+  app.get("/pokedex", function(req, res) {
+    db.pokemon.findAll({}).then(function(dbPokemon) {
+      let hbsObject = {
+        pokemon: dbPokemon
+      };
+      res.render("pokedex", hbsObject);
+    });
   });
 
   app.post("/create", function(req, res) {
