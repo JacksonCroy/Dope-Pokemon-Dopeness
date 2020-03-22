@@ -1,0 +1,46 @@
+<article id="background-img">
+
+  <div class="col-4">
+    One of two columns
+  </div>
+  <div class="col-6 enemyClass">
+    <h2>This is the Enemy</h2>
+    <ul>
+      {{#each pokemon}}
+      {{#if Enemy}}
+      {{Name}}
+      {{HP}}
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+  two of two columns
+  </div>
+  <div class="row align-items-center">
+    <div class="col center-buffer">
+      One of one columns
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col-4 playerClass">
+      <h2>This is your Pokemon</h2>
+      One of two columns
+    </div>
+    <div class="col-6">
+      two of two columns
+    </div>
+  </div>
+
+  <div id="battle-txt-output" class="row">
+    <div class="col">
+      <p>
+        Hank Hill hit Pikachu for 666 points!!!
+      </p>
+    </div>
+  </div>
+
+
+  {{!-- <ul id="userPoke">
+
+  </ul> --}}
+</article>
