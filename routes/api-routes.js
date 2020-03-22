@@ -11,39 +11,53 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
-
-    // GET route for getting all of the posts
-    app.get("/", function(req, res) {
-        db.pokemon.findAll({})
-            .then(function(dbPokemon) {
-                let hbsObject = {
-                    pokemon: dbPokemon
-                };
-                res.render("index", hbsObject)
-            });
+  // GET route for getting all of the posts
+  app.get("/", function(req, res) {
+    db.pokemon.findAll({}).then(function(dbPokemon) {
+      let hbsObject = {
+        pokemon: dbPokemon
+      };
+      res.render("index", hbsObject);
     });
+  });
 
+  app.get("/fight/:id", function(req, res) {
+    db.pokemon
+      .findOne({
+        where: {
+          Number: req.params.id
+        }
+      })
+      .then(function(poke) {
+        res.json(poke);
+      });
+  });
 
-    app.get("/fight/:id", function(req, res) {
-        db.pokemon.findOne({
-                where: {
-                    Number: req.params.id
-                }
-            })
-            .then(function(poke) {
-                res.json(poke);
-            });
+  app.get("/fight", function(req, res) {
+    res.render("fight");
+  });
+
+  app.get("/choose", function(req, res) {
+    res.render("choose");
+  });
+
+  app.get("/create", function(req, res) {
+    res.render("create");
+  });
+
+  app.get("/pokedex", function(req, res) {
+    db.pokemon.findAll({}).then(function(dbPokemon) {
+      let hbsObject = {
+        pokemon: dbPokemon
+      };
+      res.render("pokedex", hbsObject);
     });
+  });
 
-
-    app.get("/create", function (req, res) {
-        res.render("add")
-    })
-
-
-    app.post("/create", function(req, res) {
-        console.log(req.body);
-        db.pokemon.create({
+  app.post("/create", function(req, res) {
+    console.log(req.body);
+    db.pokemon
+      .create({
         Number: req.body.Number,
         Name: req.body.Name,
         Type1: req.body.Type1,
@@ -58,12 +72,10 @@ module.exports = function(app) {
         Generation: req.body.Generation,
         Legendary: req.body.Legendary,
         User: req.body.User,
-        Enemy: req.body.Enemy,
-        })
-          .then(function(dbPost) {
-            res.json(dbPost);
-          });
+        Enemy: req.body.Enemy
+      })
+      .then(function(dbPost) {
+        res.json(dbPost);
       });
-
-
-}
+  });
+};
