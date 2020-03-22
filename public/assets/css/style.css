@@ -35,9 +35,13 @@
   .pokecard {
     float: left;
     position: relative;
-    padding: 2%;
-    max-width: 50%;
-    max-height: 50%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    max-width: 20%;
+    max-height: 30%;
+    font-family: 'Press Start 2P', cursive;
+   font-size: smaller;
+   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
   
   img {
@@ -65,4 +69,17 @@
     padding-bottom: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+
+  .card-title {
+    font-size: large;
+    font-family: 'Press Start 2P', cursive;
+    color: blue;
+    -webkit-text-stroke: 1px yellow;
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: blue;
+    -webkit-text-stroke: 1px yellow;
   }

@@ -1,3 +1,6 @@
+uPoke = ''
+ePoke = ''
+
 $(document).ready(function() {
     $("#search-btn").on("click", getUserPokemon)
 
@@ -15,8 +18,11 @@ $(document).ready(function() {
                 $("<li>").text("HP: " + data.HP),
                 $("<li>").text("Attack: " + data.Attack),
                 $("<li>").text("Defense: " + data.Defense),
-                $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${data.Number}.png>`)
+                $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${data.Number}.png>`),
+                uPoke = data
+
             )
+            return uPoke
         })
     }
     $("#search-btn2").on("click", getEnemyPokemon)
@@ -35,10 +41,14 @@ $(document).ready(function() {
                 $("<li>").text("HP: " + data.HP),
                 $("<li>").text("Attack: " + data.Attack),
                 $("<li>").text("Defense: " + data.Defense),
-                $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${data.Number}.png>`)
+                $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${data.Number}.png>`),
+                ePoke = data
+
             )
+            return ePoke
         })
     }
+
 });
 
 
@@ -73,7 +83,7 @@ $("#add-btn").one("click", function(event) {
 
     // send an AJAX POST-request with jQuery
     $.post("/create", newPokemon)
-        // on success, run this callback
+        // on success, run uPoke callback
         .then(function(data) {
             // log the data we found
             console.log(data);
@@ -82,4 +92,56 @@ $("#add-btn").one("click", function(event) {
         });
 
 
+});
+
+
+isAlive = function() {
+    if (uPoke.HP > 0) {
+        // console.log(uPoke.name + " is still alive!");
+        console.log("\n-------------\n");
+        return true;
+    }
+    console.log(uPoke.Name + " has died!");
+    return false;
+};
+
+printStats = function() {
+    console.log(
+        "Name: " +
+        uPoke.Name +
+        "\nType: " +
+        uPoke.Attack +
+        "\nHP: " +
+        uPoke.HP
+    );
+    console.log("\n-------------\n");
+};
+
+attack = function attack(ePoke) {
+    var attInterval = setInterval(() => {
+
+
+        if (ePoke == isAlive()) {
+            ePoke.HP -= uPoke.Attack;
+
+            console.log("uPoke: " + uPoke.Name, uPoke.HP);
+            console.log("Defender: " + ePoke.Name, ePoke.HP);
+        } else {
+            function myStopFunction() {
+                clearInterval(attInterval);
+                console.log(uPoke.Name + " Has killed " + ePoke.Name);
+            }
+            myStopFunction()
+        }
+    }, 1000);
+};
+
+
+
+
+$(document).ready(function() {
+    $("#fightButton").on("click", function() {
+        console.log(uPoke.Name)
+        attack(ePoke)
+    });
 });
