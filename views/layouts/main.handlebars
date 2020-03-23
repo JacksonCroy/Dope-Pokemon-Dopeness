@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+	
 	<title>Pokeman Battle!</title>
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -17,7 +17,30 @@
 
 
 </head>
+{{!-- bootstrap nav bar --}}
+<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+  <a class="navbar-brand" href="#">--</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="choose">-Fight Two Pokémon!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="create">-Create Your Own Pokémon!-</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pokedex">Pokédex --</a>
+      </li>
+    </ul>
+{{!-- bootstrap nav bar --}}
 
+</nav><meta charset="UTF-8">
 <body class="container">
 	{{{ body }}}
 	<script src="assets/js/index.js"></script>
