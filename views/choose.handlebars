@@ -1,11 +1,11 @@
 <div class="jumbotron text-center">
   <h1>Choose two Pokemon!</h1>
 </div>
-<div class="row">
+<div class="row" id="bigBox">
   <div class="col-4 poke-choose card">
     <div id="userPoke"></div>
 
-    <form class="form-inline search">
+    <form class="form-inline search" id="search1">
       <div class="form-group">
         <input type="text" class="form-control" id="search-value" placeholder="Player">
       </div>
@@ -13,7 +13,7 @@
     </form>
 
   </div>
-  <div class="col-4 card poke-choose enemyPoke">
+  <div class="col-4 card poke-choose enemyPoke" id="fightBox">
     
 
     {{!-- <a class="btn btn-danger btn-lg text-center" href="fight">FIGHT!</a> --}}
@@ -22,7 +22,7 @@
   </div>
   <div class="col-4 poke-choose card">
   <div id="enemyPoke"></div>
-    <form class="form-inline search">
+    <form class="form-inline search" id="search2">
       <div class="form-group">
         <input type="text" class="form-control" id="search-value2" placeholder="Opponent">
       </div>
