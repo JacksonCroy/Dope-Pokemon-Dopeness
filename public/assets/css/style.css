@@ -117,3 +117,12 @@ img {
     background-size: 1109px 299px;
     background-repeat: no-repeat
 }
+
+.allBackgrounds{
+    background-image: url(https://cdn2.vectorstock.com/i/1000x1000/76/41/realistic-footbal-soccer-stadium-background-vector-20507641.jpg);
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
