@@ -93,3 +93,12 @@ img {
     background-size: 1109px 299px;
     background-image: url(https://images.designtrends.com/wp-content/uploads/2016/02/14183116/Ash-With-all-his-Pokemon-Background.jpg);
 }
+
+@font-face { font-family: Pokemon-Solid; src: url('Pokemon_Solid.ttf'); } 
+
+#pokeFont{
+    font-family: Pokemon-Solid, Arial, Helvetica, sans-serif;
+    color: yellow;
+    text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+    letter-spacing: 4px;
+}
