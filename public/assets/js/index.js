@@ -24,6 +24,8 @@ $(document).ready(function() {
                 uPoke = data
 
             )
+            $("#search1").remove('#search1');
+
             return uPoke
         })
     }
@@ -134,8 +136,8 @@ function counterF() {
     alert("I have been called " + counter + " times");
 }
 attack = function attack(ePoke) {
-    $("#userPoke").animate({ left: "500px" }, "fast");
-    $("#userPoke").animate({ left: "0" }, "slow");
+    $("#user").animate({ left: "500px" }, "fast");
+    $("#user").animate({ left: "105" }, "slow");
     var attInterval = setInterval(() => {
         ePoke.HP -= uPoke.Attack
         counter++
@@ -147,12 +149,15 @@ attack = function attack(ePoke) {
         } else {
 
             function myStopFunction() {
+                $("#userPoke").append(
+                    $("<li  id='vic'>").text("Victory!"))
                 $("#enemyPoke").replaceWith(
                     $("<li>").text("Name: " + ePoke.Name),
-                    $("<li>").text("HP: " + 0),
+                    $("<li  id='deadHp'>").text("HP: " + 0),
                     $("<li>").text("Attack: " + ePoke.Attack),
                     $("<li>").text("Defense: " + ePoke.Defense),
                     $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${ePoke.Number}.png id="dead"> <div id="deadDiv">Dead!</div>`))
+
                 clearInterval(attInterval);
                 console.log(uPoke.Name + " Has killed " + ePoke.Name);
                 // console.log(counter)

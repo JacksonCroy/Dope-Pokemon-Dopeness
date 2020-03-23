@@ -23,13 +23,16 @@
         padding-right: 5%;
         margin-left: 60%;
         margin-bottom: 5%;
+        font-family: 'Press Start 2P', cursive;
     }
     
     #dead {
+        color: red;
         opacity: 50%;
     }
     
-    #userPoke {
+    #user {
+        font-family: 'Press Start 2P', cursive;
         z-index: 1;
         position: absolute;
     }
@@ -116,9 +119,23 @@
     }
     
     #deadDiv {
+        color: red;
         left: 20%;
         bottom: 40%;
         position: absolute;
         text-align: center;
+        font-family: 'Press Start 2P', cursive;
+    }
+    
+    #deadHp {
+        color: red;
+    }
+    
+    #vic {
+        bottom: 30%;
+        left: 40%;
+        position: relative;
+        color: RGB(0, 155, 119);
+        z-index: 1;
         font-family: 'Press Start 2P', cursive;
     }
