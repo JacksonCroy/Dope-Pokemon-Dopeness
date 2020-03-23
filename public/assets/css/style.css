@@ -102,3 +102,9 @@ img {
     text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
     letter-spacing: 4px;
 }
+
+.fightJumbo{
+    background-image: url(https://www.smogon.com/media/smog/fightingsmog.jpg);
+    padding-bottom: 179px;
+    background-size: 1109px 299px;
+}
