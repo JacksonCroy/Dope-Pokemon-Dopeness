@@ -36,21 +36,16 @@
     }
     
     #userPoke {
+        /* font-family: 'Press Start 2P', cursive; */
+    }
+    
+    #user {
         z-index: 1;
         position: absolute;
-        font-family: 'Press Start 2P', cursive;
-        font-size: large;
-        color: blue;
-        -webkit-text-stroke: 1px yellow;
     }
     
     #enemyPoke {
-        z-index: 1;
-        position: absolute;
-        font-family: 'Press Start 2P', cursive;
-        font-size: large;
-        color: blue;
-        -webkit-text-stroke: 1px yellow;
+        /* font-family: 'Press Start 2P', cursive; */
     }
     
     .playerClass {
