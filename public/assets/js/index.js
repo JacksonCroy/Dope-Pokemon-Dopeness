@@ -157,6 +157,14 @@ attack = function attack(ePoke) {
                     $("<li>").text("Attack: " + ePoke.Attack),
                     $("<li>").text("Defense: " + ePoke.Defense),
                     $(`<img src = https://pokeres.bastionbot.org/images/pokemon/${ePoke.Number}.png id="dead"> <div id="deadDiv">Dead!</div>`))
+                $("#fightBox").show(2000)
+                $("#fightButton").replaceWith(
+                    $(`<button type="submit" class="btn btn-danger btn-lg text-center" id="reset">`).text('Fight Again?'))
+                $("#reset").on("click", function() {
+                    location.reload()
+                });
+
+
 
                 clearInterval(attInterval);
                 console.log(uPoke.Name + " Has killed " + ePoke.Name);
@@ -172,7 +180,7 @@ attack = function attack(ePoke) {
 
 $(document).ready(function() {
     $("#fightButton").on("click", function() {
-        $("#fightBox").remove('#fightBox');
+        $("#fightBox").toggle();
 
         $("#bigBox").remove('search-value');
 
