@@ -4,7 +4,7 @@
     
     #nav {
         width: 100%;
-        font-family: 'Press Start 2P', cursive;
+        
     }
     
     #background-img {
@@ -28,7 +28,7 @@
         padding-right: 5%;
         margin-left: 60%;
         margin-bottom: 5%;
-        font-family: 'Press Start 2P', cursive;
+        
     }
     
     #dead {
@@ -37,7 +37,7 @@
     }
     
     #user {
-        font-family: 'Press Start 2P', cursive;
+        
         z-index: 1;
         position: absolute;
     }
@@ -58,7 +58,7 @@
     max-width: 50%;
     max-height: 50%;
     right: -104px;
-    /* font-family: 'Press Start 2P', cursive;
+    /* 
     font-size: smaller;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
 }
@@ -173,13 +173,13 @@ img {
     
     .card-title {
         font-size: large;
-        font-family: 'Press Start 2P', cursive;
+        
         color: blue;
         -webkit-text-stroke: 1px yellow;
     }
     
     /* h1 {
-        font-family: 'Press Start 2P', cursive;
+        
         color: blue;
         -webkit-text-stroke: 1px yellow;
     }
@@ -211,7 +211,7 @@ img {
         bottom: 40%;
         position: absolute;
         text-align: center;
-        font-family: 'Press Start 2P', cursive;
+        
     }
     
     #deadHp {
@@ -224,11 +224,11 @@ img {
         position: relative;
         color: RGB(0, 155, 119);
         z-index: 1;
-        font-family: 'Press Start 2P', cursive;
+        
     }
     
     #pokeSelector {
-        font-family: 'Press Start 2P', cursive;
+        
         color: blue;
         -webkit-text-stroke: 1px yellow;
     }
