@@ -3,9 +3,9 @@ ePoke = ''
 
 
 $(document).ready(function() {
-    $("#search-btn").on("click", getUserPokemon)
+    $("#search-btn").on("click", getPokemon)
 
-    function getUserPokemon(e) {
+    function getPokemon(e) {
         e.preventDefault();
         let pokeId = $("#search-value").val()
 
@@ -14,6 +14,7 @@ $(document).ready(function() {
             url: "/fight/" + pokeId
         }).then(function(data) {
             console.log(data)
+
             $("#userPoke").append(
                 $("<li>").text("Name: " + data.Name),
                 $("<li>").text("HP: " + data.HP),
@@ -47,6 +48,7 @@ $(document).ready(function() {
 
             )
             return ePoke
+
         })
     }
 
