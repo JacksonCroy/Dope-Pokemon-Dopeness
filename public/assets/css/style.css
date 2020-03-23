@@ -107,6 +107,7 @@
         background-image: url(https://www.itl.cat/pngfile/big/182-1820321_pokmon-wallpaper-and-background-image-happy-national-pokemon.png);
         padding-bottom: 179px;
         background-size: 1109px 299px;
+        margin-top: 100px;
     }
     
     .createCard {
@@ -143,4 +144,10 @@
         color: RGB(0, 155, 119);
         z-index: 1;
         font-family: 'Press Start 2P', cursive;
+    }
+    
+    #pokeSelector {
+        font-family: 'Press Start 2P', cursive;
+        color: blue;
+        -webkit-text-stroke: 1px yellow;
     }
