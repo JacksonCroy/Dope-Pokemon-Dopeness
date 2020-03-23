@@ -108,3 +108,12 @@ img {
     padding-bottom: 179px;
     background-size: 1109px 299px;
 }
+
+.dexImg{
+    background-image: url(https://www.playatgamegrid.com/wp-content/uploads/Pokemon-group.jpg);
+    /* background-position: center center;
+    background-size: cover; */
+    padding-bottom: 179px;
+    background-size: 1109px 299px;
+    background-repeat: no-repeat
+}
