@@ -1,6 +1,7 @@
 uPoke = ''
 ePoke = ''
 
+
 $(document).ready(function() {
     $("#search-btn").on("click", getUserPokemon)
 
@@ -95,41 +96,51 @@ $("#add-btn").one("click", function(event) {
 });
 
 
+
+
+// printStats = function() {
+//     console.log(
+//         "Name: " +
+//         uPoke.Name +
+//         "\nType: " +
+//         uPoke.Attack +
+//         "\nHP: " +
+//         uPoke.HP
+//     );
+//     console.log("\n-------------\n");
+// };
+
 isAlive = function() {
-    if (uPoke.HP > 0) {
-        // console.log(uPoke.name + " is still alive!");
+    if (ePoke.HP > 0) {
+        console.log(ePoke.Name + " is still alive!");
+        console.log(ePoke.HP)
         console.log("\n-------------\n");
         return true;
     }
-    console.log(uPoke.Name + " has died!");
+    console.log(this.name + " has died!");
     return false;
 };
 
-printStats = function() {
-    console.log(
-        "Name: " +
-        uPoke.Name +
-        "\nType: " +
-        uPoke.Attack +
-        "\nHP: " +
-        uPoke.HP
-    );
-    console.log("\n-------------\n");
-};
+var counter = 0;
 
+function counterF() {
+    counter++;
+    alert("I have been called " + counter + " times");
+}
 attack = function attack(ePoke) {
+    ePoke.HP -= uPoke.Attack
     var attInterval = setInterval(() => {
+        counter++
+        // console.log(ePoke.HP)
 
-
-        if (ePoke == isAlive()) {
-            ePoke.HP -= uPoke.Attack;
-
-            console.log("uPoke: " + uPoke.Name, uPoke.HP);
-            console.log("Defender: " + ePoke.Name, ePoke.HP);
+        if (isAlive() === true) {
+            attack(ePoke)
         } else {
+
             function myStopFunction() {
                 clearInterval(attInterval);
                 console.log(uPoke.Name + " Has killed " + ePoke.Name);
+                // console.log(counter)
             }
             myStopFunction()
         }
@@ -141,7 +152,12 @@ attack = function attack(ePoke) {
 
 $(document).ready(function() {
     $("#fightButton").on("click", function() {
-        console.log(uPoke.Name)
+
         attack(ePoke)
+        console.log(uPoke.Name)
+        console.log(uPoke.HP)
+        console.log("---------------------------------------")
+        console.log(ePoke.Name)
+        console.log(ePoke.HP)
     });
 });
